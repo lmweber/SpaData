@@ -1,6 +1,6 @@
 ###############################################################
 # Script to create Visium human DLPFC data object from raw data
-# Lukas Weber, updated Mar 2022
+# Lukas Weber, updated Apr 2024
 ###############################################################
 
 # For more details on this dataset see:
@@ -17,7 +17,7 @@
 
 # Here we build a SpatialExperiment object for 1 sample only (sample 151673),
 # from raw data files (http://spatial.libd.org/spatialLIBD/) together with
-# ground truth labels from the spatialLIBD Bioconductor package
+# annotation labels from the spatialLIBD Bioconductor package
 # (http://bioconductor.org/packages/spatialLIBD)
 
 
@@ -78,12 +78,13 @@ file_scale_factors <- file.path(dir_data, "JHPCE", "scalefactors_json.json")
 scale_factors <- fromJSON(file = file_scale_factors)
 
 
-# -------------------------------------------------
-# Ground truth layer labels (and other column data)
-# -------------------------------------------------
+# -----------------------------------------------------------------
+# Manually annotated reference layer labels (and other column data)
+# -----------------------------------------------------------------
 
 # SingleCellExperiment object from spatialLIBD Bioconductor package contains 
-# ground truth layer labels and other useful barcode-level data in 'colData'
+# manually annotated reference layer labels and other useful barcode-level data 
+# in 'colData'
 
 # here we extract these columns and match rows to 'df_barcodes'
 
@@ -106,6 +107,8 @@ colnames(df_truth)[colnames(df_truth) == "barcode"] <- "barcode_id"
 colnames(df_truth)[colnames(df_truth) == "layer_guess_reordered"] <- "ground_truth"
 # convert labels to character
 df_truth$ground_truth <- as.character(df_truth$ground_truth)
+# add copy of labels column named 'reference' (better terminology)
+df_truth$reference <- df_truth$ground_truth
 # add custom sample ID
 df_truth$sample_id <- "sample_151673"
 
@@ -174,7 +177,7 @@ rownames(row_data) <- df_features$gene_id
 stopifnot(nrow(df_truth_matched) == nrow(df_tisspos_ord))
 stopifnot(all(df_truth_matched$barcode_id == df_tisspos_ord$barcode_id))
 col_data <- DataFrame(cbind(df_truth_matched, df_tisspos_ord[, -1]))
-col_data <- col_data[, c(1, 4, 5:7, 3, 2)]
+col_data <- col_data[, c(1, 5, 6:8, 3:4, 2)]
 rownames(col_data) <- col_data$barcode_id
 
 # spatial coordinates
