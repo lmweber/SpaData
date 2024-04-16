@@ -47,7 +47,7 @@ col_data <- DataFrame(
 )
 rownames(col_data) <- col_data$barcode_id
 
-# manually annotated ground truth layers
+# manually annotated reference layers
 # note: missing for some spots, so need to match correctly
 layers <- rep(NA, nrow(col_data))
 names(layers) <- rownames(col_data)

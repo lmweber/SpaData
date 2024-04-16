@@ -23,7 +23,7 @@ Collection of spatially-resolved transcriptomics (SRT) datasets in
 SpatialExperiment Bioconductor format, for use in examples, demonstrations, 
 and tutorials. The datasets are from several different SRT platforms and 
 have been sourced from various publicly available sources. Several datasets 
-include images and/or ground truth annotation labels.
+include images and/or reference annotation labels.
 }
 \details{
 The \code{STexampleData} package contains a collection of spatially-resolved 
@@ -33,7 +33,7 @@ demonstrations, and tutorials.
 
 The datasets are from several different SRT platforms and have been sourced 
 from various publicly available sources. Several datasets include images and/or 
-ground truth annotation labels.
+reference annotation labels.
 
 Additional examples and documentation are provided in the package vignette.
 
