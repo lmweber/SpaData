@@ -112,10 +112,11 @@ df_Janesick_breastCancer_Chromium <- cbind(
   df_all, 
   Title = "Janesick_breastCancer_Chromium", 
   Description =  paste0(
-    "Chromium data in the 10x Xenium paper - Janesick et al. (2023). 
-    High resolution mapping of the breast cancer tumor microenvironment using 
-    integrated single cell, spatial and in situ analysis of FFPE tissue. This 
-    dataset contains annotations for cell type from the original authors."), 
+    "10x Genomics Chromium single-cell RNA sequencing data from human breast ", 
+    "cancer dataset by Janesick et al. (2023). ", 
+    "High resolution mapping of the breast cancer tumor microenvironment using ", 
+    "integrated single-cell, spatial, and in situ analysis of FFPE tissue. ", 
+    "Contains annotations for cell type from the original authors."), 
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782698", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -130,9 +131,10 @@ df_Janesick_breastCancer_Visium <- cbind(
   df_all, 
   Title = "Janesick_breastCancer_Visium", 
   Description =  paste0(
-    "Visium data in the 10x Xenium paper - Janesick et al. (2023). 
-    High resolution mapping of the breast cancer tumor microenvironment using 
-    integrated single cell, spatial and in situ analysis of FFPE tissue."), 
+    "10x Genomics Visium spatial transcriptomics data from human breast ", 
+    "cancer dataset by Janesick et al. (2023). ", 
+    "High resolution mapping of the breast cancer tumor microenvironment using ", 
+    "integrated single-cell, spatial, and in situ analysis of FFPE tissue."), 
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782699", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -147,9 +149,10 @@ df_Janesick_breastCancer_Xenium_rep1 <- cbind(
   df_all, 
   Title = "Janesick_breastCancer_Xenium_rep1", 
   Description = paste0(
-    "Xenium sample 1 replicate 1 in the 10x Xenium paper - Janesick et al. (2023). 
-    High resolution mapping of the breast cancer tumor microenvironment using 
-    integrated single cell, spatial and in situ analysis of FFPE tissue."), 
+    "10x Genomics Xenium in situ spatial data (sample 1, replicate 1) from ", 
+    "human breast cancer dataset by Janesick et al. (2023). ", 
+    "High resolution mapping of the breast cancer tumor microenvironment using ", 
+    "integrated single-cell, spatial, and in situ analysis of FFPE tissue."), 
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7780153", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -164,9 +167,10 @@ df_Janesick_breastCancer_Xenium_rep2 <- cbind(
   df_all, 
   Title = "Janesick_breastCancer_Xenium_rep2", 
   Description =  paste0(
-    "Xenium sample 1 replicate 2 in the 10x Xenium paper - Janesick et al. (2023). 
-    High resolution mapping of the breast cancer tumor microenvironment using 
-    integrated single cell, spatial and in situ analysis of FFPE tissue."), 
+    "10x Genomics Xenium in situ spatial data (sample 1, replicate 2) from ", 
+    "human breast cancer dataset by Janesick et al. (2023). ", 
+    "High resolution mapping of the breast cancer tumor microenvironment using ", 
+    "integrated single-cell, spatial, and in situ analysis of FFPE tissue."), 
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7780154", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -181,9 +185,9 @@ df_CosMx_lungCancer <- cbind(
   df_all, 
   Title = "CosMx_lungCancer", 
   Description =  paste0(
-    "A single sample of CosMx human non-small cell lung cancer (NSCLC) data 
-    patient 9 sample 1. This dataset was previously released by Nanostring on 
-    their website."), 
+    "NanoString CosMx human non-small cell lung cancer (NSCLC) dataset. ", 
+    "Contains data from one sample (patient 9, slice 1). This dataset was ", 
+    "previously released by NanoString on their website."), 
   SourceUrl = "https://nanostring.com/resources/smi-ffpe-dataset-lung9-rep1-data/", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -198,8 +202,9 @@ df_MERSCOPE_ovarianCancer <- cbind(
   df_all, 
   Title = "MERSCOPE_ovarianCancer", 
   Description =  paste0(
-    "A single sample of MERSCOPE human ovarian cancer patient 2 sample 1. This 
-    dataset was previously released by Vizgen on their website."), 
+    "Vizgen MERSCOPE human ovarian cancer dataset. ", 
+    "Contains data from one sample (patient 2, sample 1). This dataset was ", 
+    "previously released by Vizgen on their website."), 
   SourceUrl = "https://console.cloud.google.com/storage/browser/vz-ffpe-showcase/HumanOvarianCancerPatient2Slice1;tab=objects?prefix=&forceOnObjectsSortingFiltering=false", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
@@ -214,9 +219,9 @@ df_STARmapPLUS_mouseBrain <- cbind(
   df_all, 
   Title = "STARmapPLUS_mouseBrain", 
   Description =  paste0(
-    "A single sample of the Starmapplus mouse brain well 05 data by Shi, H. 
-    et al. (2023). This dataset contains annotations for cell type and tissue 
-    regions from the original authors."), 
+    "STARmap PLUS mouse brain data by Shi et al. (2023). ", 
+    "Contains data from one sample (well 05), including annotations for ", 
+    "cell type and tissue regions from the original authors."), 
   SourceUrl = "https://zenodo.org/records/8327576", 
   Species = "Mus musculus", 
   TaxonomyId = "10090", 
