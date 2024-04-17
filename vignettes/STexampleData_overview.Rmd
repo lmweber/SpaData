@@ -1,5 +1,5 @@
 ---
-title: "STexampleData package overview"
+title: "STexampleData overview"
 author: 
   - name: Lukas M. Weber
     affiliation: "Boston University, Boston, MA, USA"
@@ -9,7 +9,7 @@ package: STexampleData
 output: 
   BiocStyle::html_document
 vignette: >
-  %\VignetteIndexEntry{STexampleData package overview}
+  %\VignetteIndexEntry{STexampleData overview}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
