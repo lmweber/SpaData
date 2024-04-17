@@ -3,7 +3,7 @@
 [![R build status](https://github.com/lmweber/STexampleData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/lmweber/STexampleData/actions)
 
 
-The `STexampleData` package contains a collection of spatially-resolved transcriptomics (SRT) datasets, which have been formatted into the [SpatialExperiment](https://bioconductor.org/packages/SpatialExperiment) Bioconductor class, for use in examples, demonstrations, and tutorials. The datasets are from several different SRT platforms and have been sourced from various publicly available sources. Several datasets include images and/or reference annotation labels.
+The `STexampleData` package contains a collection of spatial transcriptomics datasets, which have been formatted into the [SpatialExperiment](https://bioconductor.org/packages/SpatialExperiment) Bioconductor class, for use in examples, demonstrations, and tutorials. The datasets are from several different technological platforms and have been sourced from various publicly available sources. Several datasets include images and/or reference annotation labels.
 
 The `STexampleData` package is available from [Bioconductor](https://bioconductor.org/packages/STexampleData).
 
@@ -23,7 +23,7 @@ The development version can be installed from the development version of Biocond
 
 ```
 install.packages("remotes")
-remotes::install_github("lmweber/STexampleData", build_vignettes = TRUE)
+remotes::install_github("lmweber/STexampleData")
 ```
 
 
