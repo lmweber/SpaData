@@ -5,8 +5,8 @@
 ################################################################################
 
 # references:
-#' STARmap PLUS `raw_expression_pd.csv` and `spatial.csv` file were downloaded from
-#' \url{https://zenodo.org/records/8327576}
+# STARmap PLUS `raw_expression_pd.csv` and `spatial.csv` file were downloaded from
+# \url{https://zenodo.org/records/8327576}
 
 # in this script we download the STARmap PLUS data and reshape it into a 
 # SpatialExperiment object
@@ -15,9 +15,9 @@
 # return Xenium as a `SpatialExperiment` object: 
 
 # install.packages("devtools")
-devtools::install_github("estellad/SpatialExperimentIO")
+# devtools::install_github("estellad/SpatialExperimentIO")
 
-# or with the version of the pacakge on Bioconductor: 
+# or with the version of the package on Bioconductor: 
 
 # if (!requireNamespace("BiocManager", quietly=TRUE))
 #   install.packages("BiocManager")
@@ -47,8 +47,8 @@ star_spe
 # Saving data object
 # ------------------
 
-# We save the annotated Chromium to file for upload to `r Biocpkg("ExperimentHub")`.
-repath <- here::here(file.path("raw_rds", "Starmapplus_mouseBrain"))
+# We save the data to file for upload to `r Biocpkg("ExperimentHub")`.
+repath <- here::here(file.path("raw_rds", "STARmapPLUS_mouseBrain"))
 dir.create(repath, showWarnings=FALSE, recursive=TRUE)
-saveRDS(star_spe, file=file.path(here::here(repath, "Starmapplus_mouseBrain.rds")))
+saveRDS(star_spe, file=file.path(here::here(repath, "STARmapPLUS_mouseBrain.rds")))
 

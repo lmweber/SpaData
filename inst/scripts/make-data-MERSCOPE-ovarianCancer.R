@@ -5,8 +5,8 @@
 ################################################################################
 
 # references:
-#' Merscope `_cell_by_gene.csv` and `_cell_metadata.csv` file were downloaded from
-#' \url{https://console.cloud.google.com/storage/browser/vz-ffpe-showcase/HumanOvarianCancerPatient2Slice1;tab=objects?prefix=&forceOnObjectsSortingFiltering=false}
+# Merscope `_cell_by_gene.csv` and `_cell_metadata.csv` file were downloaded from
+# \url{https://console.cloud.google.com/storage/browser/vz-ffpe-showcase/HumanOvarianCancerPatient2Slice1;tab=objects?prefix=&forceOnObjectsSortingFiltering=false}
 
 # in this script we download the merscope data and reshape it into a 
 # SpatialExperiment object
@@ -15,9 +15,9 @@
 # return Xenium as a `SpatialExperiment` object: 
 
 # install.packages("devtools")
-devtools::install_github("estellad/SpatialExperimentIO")
+# devtools::install_github("estellad/SpatialExperimentIO")
 
-# or with the version of the pacakge on Bioconductor: 
+# or with the version of the package on Bioconductor: 
 
 # if (!requireNamespace("BiocManager", quietly=TRUE))
 #   install.packages("BiocManager")
@@ -47,8 +47,8 @@ mer_spe
 # Saving data object
 # ------------------
 
-# We save the annotated Chromium to file for upload to `r Biocpkg("ExperimentHub")`.
-repath <- here::here(file.path("raw_rds", "Merscope_humanOvarian"))
+# We save the data to file for upload to `r Biocpkg("ExperimentHub")`.
+repath <- here::here(file.path("raw_rds", "MERSCOPE_ovarianCancer"))
 dir.create(repath, showWarnings=FALSE, recursive=TRUE)
-saveRDS(mer_spe, file=file.path(here::here(repath, "Merscope_humanOvarian.rds")))
+saveRDS(mer_spe, file=file.path(here::here(repath, "MERSCOPE_ovarianCancer.rds")))
 

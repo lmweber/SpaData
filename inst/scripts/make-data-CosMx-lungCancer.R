@@ -5,8 +5,8 @@
 ################################################################################
 
 # references:
-#' CosMx `_exprMat_file.csv` and `_metadata_file.csv` file were downloaded from
-#' \url{https://nanostring.com/resources/smi-ffpe-dataset-lung9-rep1-data/}
+# CosMx `_exprMat_file.csv` and `_metadata_file.csv` file were downloaded from
+# \url{https://nanostring.com/resources/smi-ffpe-dataset-lung9-rep1-data/}
 
 # in this script we download the cosmx data and reshape it into a 
 # SpatialExperiment object
@@ -15,9 +15,9 @@
 # return Xenium as a `SpatialExperiment` object: 
 
 # install.packages("devtools")
-devtools::install_github("estellad/SpatialExperimentIO")
+# devtools::install_github("estellad/SpatialExperimentIO")
 
-# or with the version of the pacakge on Bioconductor: 
+# or with the version of the package on Bioconductor: 
 
 # if (!requireNamespace("BiocManager", quietly=TRUE))
 #   install.packages("BiocManager")
@@ -47,8 +47,8 @@ cos_spe
 # Saving data object
 # ------------------
 
-# We save the annotated Chromium to file for upload to `r Biocpkg("ExperimentHub")`.
-repath <- here::here(file.path("raw_rds", "Cosmx_humanLung"))
+# We save the data to file for upload to `r Biocpkg("ExperimentHub")`.
+repath <- here::here(file.path("raw_rds", "CosMx_lungCancer"))
 dir.create(repath, showWarnings=FALSE, recursive=TRUE)
-saveRDS(cos_spe, file=file.path(here::here(repath, "Cosmx_humanLung.rds")))
+saveRDS(cos_spe, file=file.path(here::here(repath, "CosMx_lungCancer.rds")))
 

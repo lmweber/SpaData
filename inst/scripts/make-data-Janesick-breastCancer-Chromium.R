@@ -5,10 +5,10 @@
 ################################################################################
 
 # references:
-#' Chromium `Feature / cell matrix HDF5 (per-sample)` .h5 file was downloaded from
-#' \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782698}
-#' and the computational cell type annotation was downloaded from 
-#' \url{https://cdn.10xgenomics.com/raw/upload/v1695234604/Xenium%20Preview%20Data/Cell_Barcode_Type_Matrices.xlsx}
+# Chromium `Feature / cell matrix HDF5 (per-sample)` .h5 file was downloaded from
+# \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782698}
+# and the computational cell type annotation was downloaded from 
+# \url{https://cdn.10xgenomics.com/raw/upload/v1695234604/Xenium%20Preview%20Data/Cell_Barcode_Type_Matrices.xlsx}
 
 # in this script we download the chromium data and reshape it into a 
 # SingleCellExperiment object
@@ -62,8 +62,9 @@ sce
 # Saving data object
 # ------------------
 
-# We save the annotated Chromium to file for upload to `r Biocpkg("ExperimentHub")`.
-repath <- here::here(file.path("raw_rds", "Chromium_10xJanesick2022_humanBreast"))
+# We save the annotated Chromium data to file for upload to `r Biocpkg("ExperimentHub")`.
+
+repath <- here::here(file.path("raw_rds", "Janesick_breastCancer_Chromium"))
 dir.create(repath, showWarnings=FALSE, recursive=TRUE)
-saveRDS(sce, file=file.path(here::here(repath, "Chromium_10xJanesick2022_humanBreast.rds")))
+saveRDS(sce, file=file.path(here::here(repath, "Janesick_breastCancer_Chromium.rds")))
 

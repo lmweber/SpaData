@@ -108,28 +108,27 @@ df_SlideSeqV2_mouseHPC <- cbind(
   stringsAsFactors = FALSE
 )
 
-df_Chromium_10xJanesick2022_humanBreast <- cbind(
+df_Janesick_breastCancer_Chromium <- cbind(
   df_all, 
-  Title = "Chromium_10xJanesick2022_humanBreast", 
+  Title = "Janesick_breastCancer_Chromium", 
   Description =  paste0(
     "Chromium data in the 10x Xenium paper - Janesick et al. (2023). 
     High resolution mapping of the breast cancer tumor microenvironment using 
     integrated single cell, spatial and in situ analysis of FFPE tissue. This 
     dataset contains annotations for cell type from the original authors."), 
-  SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782698",
+  SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782698", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Chromium_10xJanesick2022_humanBreast.rds",
+  RDataPath = "STexampleData/3_19/Janesick_breastCancer_Chromium.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SingleCellExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-
-df_Visium_10xJanesick2022_humanBreast <- cbind(
+df_Janesick_breastCancer_Visium <- cbind(
   df_all, 
-  Title = "Visium_10xJanesick2022_humanBreast", 
+  Title = "Janesick_breastCancer_Visium", 
   Description =  paste0(
     "Visium data in the 10x Xenium paper - Janesick et al. (2023). 
     High resolution mapping of the breast cancer tumor microenvironment using 
@@ -137,16 +136,16 @@ df_Visium_10xJanesick2022_humanBreast <- cbind(
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782699", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Visium_10xJanesick2022_humanBreast.rds",
+  RDataPath = "STexampleData/3_19/Janesick_breastCancer_Visium.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-df_Xenium1_10xJanesick2022_humanBreast <- cbind(
+df_Janesick_breastCancer_Xenium_rep1 <- cbind(
   df_all, 
-  Title = "Xenium1_10xJanesick2022_humanBreast", 
+  Title = "Janesick_breastCancer_Xenium_rep1", 
   Description = paste0(
     "Xenium sample 1 replicate 1 in the 10x Xenium paper - Janesick et al. (2023). 
     High resolution mapping of the breast cancer tumor microenvironment using 
@@ -154,16 +153,16 @@ df_Xenium1_10xJanesick2022_humanBreast <- cbind(
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7780153", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Xenium1_10xJanesick2022_humanBreast.rds",
+  RDataPath = "STexampleData/3_19/Janesick_breastCancer_Xenium_rep1.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-df_Xenium2_10xJanesick2022_humanBreast <- cbind(
+df_Janesick_breastCancer_Xenium_rep2 <- cbind(
   df_all, 
-  Title = "Xenium2_10xJanesick2022_humanBreast", 
+  Title = "Janesick_breastCancer_Xenium_rep2", 
   Description =  paste0(
     "Xenium sample 1 replicate 2 in the 10x Xenium paper - Janesick et al. (2023). 
     High resolution mapping of the breast cancer tumor microenvironment using 
@@ -171,16 +170,16 @@ df_Xenium2_10xJanesick2022_humanBreast <- cbind(
   SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7780154", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Xenium2_10xJanesick2022_humanBreast.rds",
+  RDataPath = "STexampleData/3_19/Janesick_breastCancer_Xenium_rep2.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-df_Cosmx_humanLung <- cbind(
+df_CosMx_lungCancer <- cbind(
   df_all, 
-  Title = "Cosmx_humanLung", 
+  Title = "CosMx_lungCancer", 
   Description =  paste0(
     "A single sample of CosMx human non-small cell lung cancer (NSCLC) data 
     patient 9 sample 1. This dataset was previously released by Nanostring on 
@@ -188,32 +187,32 @@ df_Cosmx_humanLung <- cbind(
   SourceUrl = "https://nanostring.com/resources/smi-ffpe-dataset-lung9-rep1-data/", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Cosmx_humanLung.rds",
+  RDataPath = "STexampleData/3_19/CosMx_lungCancer.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-df_Merscope_humanOvarian <- cbind(
+df_MERSCOPE_ovarianCancer <- cbind(
   df_all, 
-  Title = "Merscope_humanOvarian", 
+  Title = "MERSCOPE_ovarianCancer", 
   Description =  paste0(
     "A single sample of MERSCOPE human ovarian cancer patient 2 sample 1. This 
     dataset was previously released by Vizgen on their website."), 
   SourceUrl = "https://console.cloud.google.com/storage/browser/vz-ffpe-showcase/HumanOvarianCancerPatient2Slice1;tab=objects?prefix=&forceOnObjectsSortingFiltering=false", 
   Species = "Homo sapiens", 
   TaxonomyId = "9606", 
-  RDataPath = "STexampleData/3_19/Merscope_humanOvarian.rds",
+  RDataPath = "STexampleData/3_19/MERSCOPE_ovarianCancer.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
   stringsAsFactors = FALSE
 )
 
-df_Starmapplus_mouseBrain <- cbind(
+df_STARmapPLUS_mouseBrain <- cbind(
   df_all, 
-  Title = "Starmapplus_mouseBrain", 
+  Title = "STARmapPLUS_mouseBrain", 
   Description =  paste0(
     "A single sample of the Starmapplus mouse brain well 05 data by Shi, H. 
     et al. (2023). This dataset contains annotations for cell type and tissue 
@@ -221,7 +220,7 @@ df_Starmapplus_mouseBrain <- cbind(
   SourceUrl = "https://zenodo.org/records/8327576", 
   Species = "Mus musculus", 
   TaxonomyId = "10090", 
-  RDataPath = "STexampleData/3_19/Starmapplus_mouseBrain.rds",
+  RDataPath = "STexampleData/3_19/STARmapPLUS_mouseBrain.rds", 
   BiocVersion = "3.19", 
   RDataClass = "SpatialExperiment", 
   DispatchClass = "Rds", 
@@ -235,14 +234,14 @@ df_combined <- rbind(
   df_Visium_mouseCoronal, 
   df_seqFISH_mouseEmbryo, 
   df_ST_mouseOB, 
-  df_SlideSeqV2_mouseHPC,
-  df_Chromium_10xJanesick2022_humanBreast,
-  df_Visium_10xJanesick2022_humanBreast,
-  df_Xenium1_10xJanesick2022_humanBreast,
-  df_Xenium2_10xJanesick2022_humanBreast,
-  df_Cosmx_humanLung,
-  df_Merscope_humanOvarian,
-  df_Starmapplus_mouseBrain
+  df_SlideSeqV2_mouseHPC, 
+  df_Janesick_breastCancer_Chromium, 
+  df_Janesick_breastCancer_Visium, 
+  df_Janesick_breastCancer_Xenium_rep1, 
+  df_Janesick_breastCancer_Xenium_rep2, 
+  df_CosMx_lungCancer, 
+  df_MERSCOPE_ovarianCancer, 
+  df_STARmapPLUS_mouseBrain
 )
 
 write.csv(df_combined, file = "../extdata/metadata.csv", row.names = FALSE)

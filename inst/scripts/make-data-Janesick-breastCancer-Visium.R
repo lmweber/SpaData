@@ -5,8 +5,8 @@
 ################################################################################
 
 # references:
-#' Visium `Feature / cell matrix HDF5 (per-sample)` .h5 file was downloaded from
-#' \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782699}
+# Visium `Feature / cell matrix HDF5 (per-sample)` .h5 file was downloaded from
+# \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7782699}
 
 # in this script we download the visium data and reshape it into a 
 # SpatialExperiment object
@@ -99,9 +99,9 @@ vis
 # Saving data object
 # ------------------
 
-# We save the Visium to file for upload to `r Biocpkg("ExperimentHub")`.
+# We save the Visium data to file for upload to `r Biocpkg("ExperimentHub")`.
 
-repath <- here::here(file.path("raw_rds", "Visium_10xJanesick2022_humanBreast"))
+repath <- here::here(file.path("raw_rds", "Janesick_breastCancer_Visium"))
 dir.create(repath, showWarnings=FALSE, recursive=TRUE)
-saveRDS(vis, file=file.path(here::here(repath, "Visium_10xJanesick2022_humanBreast.rds")))
+saveRDS(vis, file=file.path(here::here(repath, "Janesick_breastCancer_Visium.rds")))
 
