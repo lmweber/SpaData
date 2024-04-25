@@ -56,14 +56,14 @@ list.files(here::here("raw_data/xenium_sample1rep2/outs"))
 # Sanity check that the files you need are in the `/outs` folder.
 
 all(c("cell_feature_matrix.h5", "cell_feature_matrix", "cells.csv.gz") %in% 
-      list.files(here::here("raw_data/xenium_sample1rep1/outs")))
+      list.files(here::here("raw_data/xenium_sample1rep2/outs")))
 
 
 # ------------------------
 # Create SpatialExperiment
 # ------------------------
 
-xe2_spe <- SpatialExperimentIO::readXeniumSXE(here::here("raw_data/xenium_sample1rep1/outs"), return_type = "SPE")
+xe2_spe <- SpatialExperimentIO::readXeniumSXE(here::here("raw_data/xenium_sample1rep2/outs"), return_type = "SPE")
 xe2_spe <- xe2_spe[rowData(xe2_spe)$Type == "Gene Expression"]
 rownames(xe2) <- rowData(xe2)$Symbol
 
