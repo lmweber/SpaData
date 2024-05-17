@@ -34,5 +34,6 @@ Suggests:
     BiocStyle, 
     knitr, 
     rmarkdown, 
-    BumpyMatrix
+    BumpyMatrix, 
+    HDF5Array
 RoxygenNote: 7.1.2
