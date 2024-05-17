@@ -232,7 +232,7 @@ spe
 
 ```{r, message=FALSE}
 # load 'Visium_humanDLPFC' dataset using ExperimentHub ID
-spe <- myfiles[["EH7538"]]
+spe <- myfiles[["EH9516"]]
 spe
 ```
 
